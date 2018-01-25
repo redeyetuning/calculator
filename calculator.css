@@ -1,0 +1,127 @@
+/* RESETS */
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-weight: bold;
+	font-family: 'Exo', sans-serif;
+	color: white;
+}
+
+html {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	width: 99%;
+	height: 99%;
+}
+
+/* LAYOUT */
+#calcContainer {
+	display: grid;
+	border: 1px solid black;
+	width: 450px;
+	height: 520px;
+	margin: 20% auto;
+	grid-template-columns: 100px 100px 100px 100px;
+	grid-template-rows: 60px 110px 60px 60px 60px 60px 60px;
+	grid-template-areas: 	". . solarBox solarBox"
+							"displayBox displayBox displayBox displayBox"
+							"leftPareBox rightPareBox percentBox clearBox"
+							"numBox7 numBox8 numBox9 divideBox"
+							"numBox4 numBox5 numBox6 multiplyBox"
+							"numBox1 numBox2 numBox3 minusBox"
+							"numBox0 decimalBox equalsBox plusBox";
+	justify-content: center;
+	align-items: center;
+	border-radius: 25px;
+	background-color: #fcfcf9;
+	box-shadow: 2px 2px 5px rgba(0,0,0,0.5),
+            	10px 10px 15px rgba(0,0,0,0.5),
+          	  -1px -1px 30px rgba(0,0,0,0.2);
+}
+
+#solarBox {grid-area: solarBox}
+#displayBox {grid-area: displayBox;} 
+#leftPareBox {grid-area: leftPareBox;}
+#rightPareBox {grid-area: rightPareBox;}
+#percentBox{grid-area: percentBox;}
+#clearBox{grid-area: clearBox;}
+#divideBox {grid-area: divideBox;}
+#multiplyBox {grid-area: multiplyBox;}
+#plusBox {grid-area: plusBox;}
+#minusBox {grid-area: minusBox;}
+#equalsBox{grid-area: equalsBox}
+#decimalBox{grid-area: decimalBox}
+#numBox0 {grid-area: numBox0;}
+#numBox1 {grid-area: numBox1;}
+#numBox2 {grid-area: numBox2;}
+#numBox3 {grid-area: numBox3;}
+#numBox4 {grid-area: numBox4;}
+#numBox5 {grid-area: numBox5;}
+#numBox6 {grid-area: numBox6;}
+#numBox7 {grid-area: numBox7;}
+#numBox8 {grid-area: numBox8;}
+#numBox9 {grid-area: numBox9;}
+
+
+/**/
+.numBox, .functionBox, .equalsBox {
+	height: 40px;
+	width: 80px;
+	margin: 10px;
+	border: 1px solid black;
+	text-align: center;
+	margin: 10px;
+	font-size: 20px;
+	padding: 7px 0px;
+	border-radius: 15px;
+	box-shadow: 2px 2px 3px rgba(0,0,0,0.5),
+            	5px 5px 5px rgba(0,0,0,0.5),
+          	  -1px -1px 15px rgba(0,0,0,0.2);
+}
+
+.solarBox{
+	width: 160px;
+	height: 30px;
+	border: 1px solid black;
+	border-radius: 5px;
+	margin: 15px auto 10px auto;
+	background-color: #9b7c6f;
+	box-shadow: inset 5px 5px 8px rgba(0,0,0,0.5);
+}
+
+.push {
+box-shadow: inset 5px 5px 8px rgba(0,0,0,0.5);
+}
+
+.numBox {
+	background-color: #2f58a8;
+}
+
+.functionBox {
+	background-color:#969aa3 ;
+}
+
+#clearBox, .equalsBox {
+	background-color: #d8512f;
+}
+
+.displayBox {
+	
+	height: 80px;
+	margin: 10px; 
+	width: 380px;
+	border: 1px solid black;
+	text-align: right;
+	padding: 25px 20px 5px 20px;
+	font-family: 'Orbitron', cursive;
+	font-size: 45px;
+	font-color: darkgrey;
+	border-radius: 15px;
+	background-color: #b6c6c2;
+	color: #1f2322;
+	box-shadow: inset 5px 5px 8px rgba(0,0,0,0.5);
+}
