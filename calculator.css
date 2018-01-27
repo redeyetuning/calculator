@@ -67,7 +67,7 @@ body {
 #numBox9 {grid-area: numBox9;}
 
 
-/**/
+/* BUTTONS */
 .numBox, .functionBox, .equalsBox {
 	height: 40px;
 	width: 80px;
@@ -93,22 +93,6 @@ body {
 	box-shadow: inset 5px 5px 8px rgba(0,0,0,0.5);
 }
 
-.push {
-box-shadow: inset 5px 5px 8px rgba(0,0,0,0.5);
-}
-
-.numBox {
-	background-color: #2f58a8;
-}
-
-.functionBox {
-	background-color:#969aa3 ;
-}
-
-#clearBox, .equalsBox {
-	background-color: #d8512f;
-}
-
 .displayBox {
 	
 	height: 80px;
@@ -125,3 +109,20 @@ box-shadow: inset 5px 5px 8px rgba(0,0,0,0.5);
 	color: #1f2322;
 	box-shadow: inset 5px 5px 8px rgba(0,0,0,0.5);
 }
+
+.numBox {
+	background-color: #2f58a8;
+}
+
+.functionBox, .equalsBox  {
+	background-color:#969aa3 ;
+}
+
+#clearBox {
+	background-color: #d8512f;
+}
+
+.push {
+box-shadow: inset 5px 5px 8px rgba(0,0,0,0.5);
+}
+
